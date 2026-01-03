@@ -1,4 +1,4 @@
-# EventCompanion Bot v2
+# EventCompanion Bot
 
 A production-ready Telegram event management bot for organizers and participants.
 
@@ -24,5 +24,5 @@ A production-ready Telegram event management bot for organizers and participants
 
 ### 1. Clone
 ```bash
-git clone https://github.com/YOUR_USERNAME/EventCompanionBotV2.git
-cd EventCompanionBotV2
+git clone https://github.com/YOUR_USERNAME/EventCompanionBot.git
+cd EventCompanionBot
