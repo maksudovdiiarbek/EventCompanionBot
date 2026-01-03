@@ -1,0 +1,169 @@
+{
+    "commands": {
+      "start": "start",
+      "my_events": "my_events",
+      "help": "help",
+      "cancel": "cancel"
+    },
+  
+    "texts": {
+      "welcome": "👋 Welcome to <b>EventCompanion</b>!\n\nUse:\n• /{my_events}\n• /{help}\n• /{cancel}",
+      "help": "ℹ️ <b>Help</b>\n\nCommands:\n• /{my_events} — show your events\n• /{help} — show this help\n• /{cancel} — cancel current step\n\nTip: After opening an event you’ll see action buttons.",
+      "cancelled": "✅ Cancelled.",
+      "my_events_title": "📋 <b>My events</b>\nChoose what you want to do:",
+      "invalid_event_link": "❌ Invalid event link. Please contact the organizer.",
+      "choose_event_first": "Choose an event first: /{my_events}",
+      "unknown_action": "⚠️ Unknown action. Use /{my_events} or /start.",
+      "events_you_organize": "👑 <b>Events you organize</b>",
+      "events_you_joined": "🎟 <b>Events you joined</b>",
+      "create_event_prompt": "➕ <b>Create new event</b>\n\nPlease send the <b>event name</b>:",
+      "event_not_found": "❌ Event not found.",
+      "entered_event": "✅ You’re now in <b>{title}</b>\nRole: <b>{role}</b>\n\nChoose an action:",
+      "invite_title": "🔗 <b>Invite</b> — <b>{title}</b>\n\nUse the buttons below:",
+      "invite_only_admin": "❌ Only the organizer can view invite here.",
+      "delete_confirm": "🗑 <b>Delete this event?</b>\nThis cannot be undone.",
+      "event_deleted": "✅ Event deleted.",
+      "leave_confirm": "🚪 <b>Leave this event?</b>",
+      "left_event": "✅ You left the event.",
+      "organizer_cant_leave": "❌ Organizers can't leave their own event.",
+      "not_allowed": "❌ Not allowed.",
+      "sent_event_info": "✅ Sent event info.",
+      "no_photos_yet": "📷 No photos yet.",
+      "sent_n_photos": "✅ Sent {n} photo(s).",
+      "upload_mode_title": "⬆️ <b>Upload mode</b>\n\nSend photos now (each will be saved).\nTap Done to exit.",
+      "upload_mode_closed": "✅ Upload mode closed.",
+      "photo_saved_send_more": "✅ Photo saved. Send another, or tap Done.",
+      "photo_received_use_photos": "📷 Photo received. Use Photos menu to upload/view.",
+      "agenda_updated": "✅ Agenda updated.",
+      "wifi_updated": "✅ WiFi updated.",
+      "org_updated": "✅ Organizer info updated.",
+      "time_updated": "✅ Time updated.",
+      "location_updated": "✅ Location updated.",
+      "map_pin_saved": "✅ Map pin saved.",
+      "map_pin_removed": "✅ Map pin removed.",
+  
+      "reg_full_name_prompt": "📝 Registration for this event\n\nPlease enter your <b>Full Name</b>:",
+      "reg_phone_prompt": "📞 Please share your <b>Phone number</b> using the button below:",
+      "reg_phone_reject": "❌ Please tap the button to share your phone number (Contact).",
+      "reg_company_prompt": "🏢 Please enter your <b>Company name</b>:",
+      "reg_saved": "✅ Registration saved.",
+  
+      "broadcast_sending": "📢 Sending to {n} participants…",
+      "broadcast_done": "✅ Done.\nSuccess: {success}\nFailed: {fail}",
+      "broadcast_none": "❌ No participants to notify (excluding organizer).",
+  
+      "reminder_scheduled": "✅ Reminder scheduled for <b>{when}</b> ({minutes} min before).",
+      "reminder_past": "❌ That reminder time is in the past. Please set a future event time.",
+      "event_time_not_set": "❌ Event time is not set. Set time first.",
+  
+      "ask_question_prompt": "💬 <b>Ask an anonymous question</b> — <b>{title}</b>\n\nType your question now:",
+      "question_sent": "✅ Sent! The organizer will receive your question.",
+  
+      "rating_choose": "⭐ <b>Feedback</b> — <b>{title}</b>\n\nChoose a rating:",
+      "rating_saved_optional_comment": "✅ Rating saved.\n\n(Optional) Send a comment, or tap Skip:",
+      "feedback_saved": "✅ Thanks! Your feedback was saved.",
+      "comment_empty": "❌ Comment is empty. Send a comment, or tap Skip.",
+      "comment_saved": "✅ Thanks! Your comment was saved.",
+      "members_none": "No members yet.",
+      "questions_none": "💬 No anonymous questions yet.",
+  
+      "photos_menu_title": "📷 <b>Photos</b> — <b>{title}</b>",
+      "push_prompt": "📢 <b>Push notification</b> — <b>{title}</b>\n\nSend the message to broadcast to participants.\n(You can also send a photo with a caption.)",
+      "alert_menu": "⏰ <b>Alert participants</b> — <b>{title}</b>\n\nChoose when to remind participants:",
+  
+      "use_my_events_to_continue": "Use /{my_events} to continue.",
+      "share_own_contact": "❌ Please share your own contact.",
+      "phone_read_fail": "❌ Could not read phone number. Please try again.",
+      "map_pin_need_location": "❌ Please send a Telegram Location (📎 → Location), or type <code>clear</code>.",
+      "create_event_invalid_name": "❌ Please send a valid event name.",
+      "reg_name_invalid": "❌ Please enter a valid Full Name:",
+      "reg_company_invalid": "❌ Please enter a valid Company name:",
+      "wifi_invalid_format": "❌ Invalid format.\nSend:\nSSID: your_network\nPassword: your_password",
+      "wifi_invalid_password": "❌ Invalid password (min 8 characters).",
+      "time_invalid_format": "❌ Invalid format. Use: YYYY-MM-DD HH:MM\nExample: 2026-01-15 15:30",
+  
+      "location_set_prompt": "📍 <b>Set location</b> — <b>{title}</b>\n\nCurrent: <b>{current}</b>\n\nSend the new location text.\nType <code>clear</code> to remove location.",
+      "map_pin_set_prompt": "📍 <b>Set map pin</b> — <b>{title}</b>\n\nNow send a <b>Telegram Location</b> (📎 → Location).\n\nTo remove pin, type <code>clear</code>.",
+      "wifi_set_prompt": "📶 <b>Update WiFi</b> — <b>{title}</b>\n\nSend in 2 lines:\n<b>SSID:</b> your_network\n<b>Password:</b> your_password\n\nPassword must be at least <b>8 characters</b>.",
+      "org_set_prompt": "👤 <b>Update organizer info</b> — <b>{title}</b>\n\nSend in format:\nName: John Doe\nPhone: +1234567890\nEmail: john@example.com\nTelegram: @johndoe",
+      "time_set_prompt": "🕒 <b>Set time</b> — <b>{title}</b>\n\nCurrent: <b>{current}</b>\n\nSend time as:\n<b>YYYY-MM-DD HH:MM</b>\n\nExample:\n2026-01-15 15:30",
+      "agenda_set_prompt": "✏️ <b>Update agenda</b> — <b>{title}</b>\n\nSend the new agenda text:",
+  
+      "manage_title": "⚙️ <b>Manage</b> — <b>{title}</b>",
+      "view_title": "👀 <b>View</b> — <b>{title}</b>",
+      "agenda_title": "📅 <b>Agenda</b> — <b>{title}</b>",
+      "wifi_title": "📶 <b>WiFi</b> — <b>{title}</b>",
+      "org_title": "👤 <b>Organizer info</b> — <b>{title}</b>",
+      "time_title": "🕒 <b>Time</b> — <b>{title}</b>",
+      "location_title": "📍 <b>Location</b> — <b>{title}</b>",
+      "map_pin_title": "📍 <b>Map pin</b> — <b>{title}</b>\n\nChoose an action:",
+  
+      "current_agenda": "📅 <b>Current agenda</b> — <b>{title}</b>\n\n{value}",
+      "current_wifi": "📶 <b>Current WiFi</b> — <b>{title}</b>\n\n{value}",
+      "current_org": "👤 <b>Current organizer info</b> — <b>{title}</b>\n\n{value}",
+      "current_time": "🕒 <b>Current time</b> — <b>{title}</b>\n\n<b>{value}</b>",
+      "current_location": "📍 <b>Current location</b> — <b>{title}</b>\n\n<b>{value}</b>",
+      "current_map_pin": "📍 <b>Current map pin</b> — <b>{title}</b>\n\n{value}",
+  
+      "members_title": "👥 <b>Members</b> — <b>{title}</b>\n\n{value}",
+      "questions_title": "💬 <b>Anonymous questions</b> — <b>{title}</b>\n\n{value}",
+      "feedback_title": "⭐ <b>Feedback</b> — <b>{title}</b>\n\n{value}"
+    },
+  
+    "buttons": {
+      "back": "⬅ Back",
+      "cancel": "❌ Cancel",
+      "yes": "✅ Yes",
+      "no": "❌ No",
+      "done": "✅ Done",
+      "skip": "⏭ Skip",
+  
+      "hub_admin": "👑 Events I organize ({n})",
+      "hub_joined": "🎟 Events I joined ({n})",
+      "hub_create": "➕ Create new event",
+  
+      "event_item_admin": "📌 {name}",
+      "event_item_joined": "🎟 {name}",
+  
+      "invite": "🔗 Invite",
+      "share": "📤 Share",
+      "delete_event": "🗑 Delete event",
+      "leave_event": "🚪 Leave",
+  
+      "manage": "⚙️ Manage",
+      "view": "👀 View",
+      "push": "📢 Push notification",
+      "alert": "⏰ Alert participants",
+      "invite_link": "🔗 Invite link",
+  
+      "p_info": "ℹ️ Event info",
+      "p_share": "📤 Share invite",
+      "p_ask": "💬 Ask anonymous question",
+      "p_feedback": "⭐ Feedback",
+      "p_leave": "🚪 Leave event",
+  
+      "agenda": "📅 Agenda",
+      "time": "🕒 Time",
+      "location": "📍 Location",
+      "map_pin": "📍 Map pin",
+      "wifi": "📶 WiFi",
+      "organizer": "👤 Organizer info",
+      "photos": "📷 Photos",
+  
+      "view_current": "👁 View current",
+      "update_set": "✏️ Update / Set",
+  
+      "members": "👥 Members",
+      "anon_questions": "💬 Anonymous questions",
+      "feedback_summary": "⭐ Feedback summary",
+  
+      "photos_view": "📷 View photos",
+      "photos_upload": "⬆️ Upload photos",
+  
+      "alert_before": "⏰ {m} min before",
+  
+      "positive": "👍 Positive",
+      "negative": "👎 Negative"
+    }
+  }
+  
